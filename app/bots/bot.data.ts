@@ -15,7 +15,7 @@ const DEMO_BOTS: Omit<Bot, "id" | "session">[] = [
     context: [],
     modelConfig: {
       model: ModelType.ZEPHYR_7B_BETA,
-      temperature: 0.5,
+      temperature: 0.2,
       maxTokens: 8000,
       sendMemory: true,
     },
