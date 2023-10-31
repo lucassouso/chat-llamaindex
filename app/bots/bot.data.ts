@@ -14,7 +14,7 @@ const DEMO_BOTS: Omit<Bot, "id" | "session">[] = [
     botHello: "Hello! How can I assist you today?",
     context: [],
     modelConfig: {
-      model: "gpt-3.5-turbo-16k",
+      model: ModelType.ZEPHYR_7B_BETA,
       temperature: 0.5,
       maxTokens: 8000,
       sendMemory: true,
@@ -33,7 +33,7 @@ const DEMO_BOTS: Omit<Bot, "id" | "session">[] = [
       },
     ],
     modelConfig: {
-      model: "gpt-3.5-turbo-16k",
+      model: ModelType.ZEPHYR_7B_BETA,
       temperature: 0.1,
       maxTokens: 8000,
       sendMemory: true,
@@ -53,7 +53,7 @@ const DEMO_BOTS: Omit<Bot, "id" | "session">[] = [
       },
     ],
     modelConfig: {
-      model: "gpt-3.5-turbo-16k",
+      model: ModelType.ZEPHYR_7B_BETA,
       temperature: 0.1,
       maxTokens: 8000,
       sendMemory: true,
@@ -73,7 +73,7 @@ const DEMO_BOTS: Omit<Bot, "id" | "session">[] = [
       },
     ],
     modelConfig: {
-      model: "gpt-3.5-turbo-16k",
+      model: ModelType.ZEPHYR_7B_BETA,
       temperature: 0.1,
       maxTokens: 8000,
       sendMemory: true,
@@ -101,7 +101,7 @@ export const createEmptyBot = (): Bot => ({
   name: Locale.Store.DefaultBotName,
   context: [],
   modelConfig: {
-    model: "gpt-3.5-turbo-16k" as ModelType,
+    model: ModelType.ZEPHYR_7B_BETA,
     temperature: 0.5,
     maxTokens: 6000,
     sendMemory: true,
@@ -112,3 +112,4 @@ export const createEmptyBot = (): Bot => ({
   hideContext: false,
   session: createEmptySession(),
 });
+
